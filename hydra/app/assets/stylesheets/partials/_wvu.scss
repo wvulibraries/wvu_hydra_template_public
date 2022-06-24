@@ -74,7 +74,7 @@ a:hover, a:active, a:focus {
 			box-sizing: border-box;
 		}
 		li:nth-last-child(1) a {
-			color:#ffcc66;
+			color:#ffffff;
 			font-weight: 400;
 		}
 		.links {
@@ -92,9 +92,66 @@ a:hover, a:active, a:focus {
 			padding-top: 10px;
 			padding-bottom: 15px;
 			width: 50%;
-			display: inline-block;
+			display:block;
 			float:left;
 		}
+	}
+	.masthead-btn-container{
+		margin: 2em 0em;
+		display: inline-block;
+	}
+	.masthead-btn {
+		border: 2px solid black;
+		border-radius: 3px;
+		background-color: transparent;
+		color: black;
+		padding: .75em;
+		font-size: 1em;
+		font-weight:bold;
+		cursor: pointer;
+		display: block;
+		float: right;
+		margin: 0px 3px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		line-height: 1;
+		}
+	  
+	  /* gold */
+	  .gold {
+		border-color: #EAAA00;
+		color: #EAAA00;
+	  }
+	  
+	  .gold:hover {
+		background-color: #EAAA00;
+		color: #2C2A29;
+		text-decoration: underline
+	  }
+	  
+	  /* Blue */
+	  .blue {
+		border-color: #9BD3DD;
+		color: #9BD3DD;
+	  }
+	  
+	  .blue:hover {
+		background: #9BD3DD;
+		color: #2C2A29;
+		text-decoration: underline
+	  }
+	  
+	  /* Orange */
+	  .orange {
+		border-color: #ED8B00;
+		color: #ED8B00;
+	  }
+	  
+	  .orange:hover {
+		background: #ED8B00;
+		color: #2C2A29;
+		text-decoration: underline
+	  }
 	}
 	.links {
 		font-size: 12px;
@@ -113,7 +170,6 @@ a:hover, a:active, a:focus {
 			margin: 0; 
 			padding: 0;
 		}
-	}
 }
 #wvutoggle {
 	box-sizing: content-box;
@@ -142,15 +198,16 @@ footer {
 	padding-bottom: 50px;
 	font-size: 16px;
     p {
-		font-size:  0.75em;
-		line-height: 150%;
+		font-size:  0.8em;
+		line-height: 175%;
 	}
 	a {
 		color: #fff;
-		text-decoration: none;
+		text-decoration: underline;
 		&:hover {
-			text-decoration: underline;
-			color: #fff;
+			text-decoration: none;
+			color: #ED8B00;
+			;
 		}
 	}
 }
@@ -186,9 +243,10 @@ footer {
 				font-size:  0.75em;	
 				border-radius: 30px;
 				color: #fff;
-				text-decoration: none;
+				text-decoration: underline;
 				&:hover {
-					text-decoration: underline;
+					text-decoration: none;
+					color: #ED8B00;
 				}
 			}
 		}
@@ -310,11 +368,6 @@ footer {
 	}
 }
 
-.clearfix {
-  overflow: auto;
-  zoom: 1;
-}
-
 /*********************************************************************
 	1024px and up
 **********************************************************************/
@@ -350,6 +403,9 @@ footer {
 	    width: 50%;
 	    padding: 36px 0px 10px;
 	    text-align: right;
+	}
+	.masthead-btn-container{
+		float: right;
 	}
 
 
